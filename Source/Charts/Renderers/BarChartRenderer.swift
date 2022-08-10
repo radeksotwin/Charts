@@ -378,22 +378,10 @@ open class BarChartRenderer: BarLineScatterCandleBubbleRenderer
                 // Set the color for the currently drawn value. If the index is out of bounds, reuse colors.
                 context.setFillColor(dataSet.color(atIndex: j).cgColor)
             }
-<<<<<<< HEAD
             
-            
-//            context.fill(barRect)
-=======
-           
->>>>>>> f484c0dcab021f4d2000b444bd984062ec82b0e4
-            // Rounded corners bar
             let bezierPath = UIBezierPath(roundedRect: barRect, cornerRadius: 7)
             context.addPath(bezierPath.cgPath)
             context.drawPath(using: .fill)
-<<<<<<< HEAD
-=======
-//            context.fill(barRect)
->>>>>>> f484c0dcab021f4d2000b444bd984062ec82b0e4
-            
             if drawBorder
             {
                 context.setStrokeColor(borderColor.cgColor)
@@ -756,19 +744,10 @@ open class BarChartRenderer: BarLineScatterCandleBubbleRenderer
                 prepareBarHighlight(x: e.x, y1: y1, y2: y2, barWidthHalf: barData.barWidth / 2.0, trans: trans, rect: &barRect)
                 
                 setHighlightDrawPos(highlight: high, barRect: barRect)
-                
-<<<<<<< HEAD
-//                context.fill(barRect)
-=======
->>>>>>> f484c0dcab021f4d2000b444bd984062ec82b0e4
                 // Rounded corners bar highlight
                 let bezierPath = UIBezierPath(roundedRect: barRect, cornerRadius: 7)
                 context.addPath(bezierPath.cgPath)
                 context.drawPath(using: .fill)
-<<<<<<< HEAD
-=======
-//                context.fill(barRect)
->>>>>>> f484c0dcab021f4d2000b444bd984062ec82b0e4
             }
         }
     }
